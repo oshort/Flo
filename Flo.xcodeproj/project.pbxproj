@@ -12,6 +12,7 @@
 		7B7BFF481D91B4BC00161469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7BFF461D91B4BC00161469 /* Main.storyboard */; };
 		7B7BFF4A1D91B4BC00161469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7BFF491D91B4BC00161469 /* Assets.xcassets */; };
 		7B7BFF4D1D91B4BC00161469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7BFF4B1D91B4BC00161469 /* LaunchScreen.storyboard */; };
+		7B7BFF591D91B5B700161469 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BFF581D91B5B700161469 /* PushButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7B7BFF491D91B4BC00161469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7BFF4C1D91B4BC00161469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B7BFF4E1D91B4BC00161469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7BFF581D91B5B700161469 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				7B7BFF421D91B4BB00161469 /* AppDelegate.swift */,
 				7B7BFF441D91B4BC00161469 /* ViewController.swift */,
+				7B7BFF581D91B5B700161469 /* PushButtonView.swift */,
 				7B7BFF461D91B4BC00161469 /* Main.storyboard */,
 				7B7BFF491D91B4BC00161469 /* Assets.xcassets */,
 				7B7BFF4B1D91B4BC00161469 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7BFF451D91B4BC00161469 /* ViewController.swift in Sources */,
+				7B7BFF591D91B5B700161469 /* PushButtonView.swift in Sources */,
 				7B7BFF431D91B4BC00161469 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
