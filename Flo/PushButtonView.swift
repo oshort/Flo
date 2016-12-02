@@ -12,12 +12,12 @@ import UIKit
 @IBDesignable
 class PushButtonView: UIButton {
     
-    @IBInspectable var fillColor: UIColor = UIColor.greenColor()
+    @IBInspectable var fillColor: UIColor = UIColor.green
     @IBInspectable var isAddButton: Bool = true
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
-        var path = UIBezierPath(ovalInRect: rect)
+        let path = UIBezierPath(ovalIn: rect)
         fillColor.setFill()
         path.fill()
         
@@ -27,37 +27,37 @@ class PushButtonView: UIButton {
         let plusWidth: CGFloat = min(bounds.width, bounds.height) * 0.6
         
         //create the path
-        var plusPath = UIBezierPath()
+        let plusPath = UIBezierPath()
         
         //set the path's line width to the height of the stroke
         plusPath.lineWidth = plusHeight
         
         //move the initial point of the path
         //to the start of the horizontal stroke
-        plusPath.moveToPoint(CGPoint(
+        plusPath.move(to: CGPoint(
             x:bounds.width/2 - plusWidth/2 + 0.5,
             y:bounds.height/2 + 0.5))
         
         //add a point to the path at the end of the stroke
-        plusPath.addLineToPoint(CGPoint(
+        plusPath.addLine(to: CGPoint(
             x:bounds.width/2 + plusWidth/2 + 0.5,
             y:bounds.height/2 + 0.5))
         
         //Vertical Line
         if isAddButton {
             //move to the start of the vertical stroke
-            plusPath.moveToPoint(CGPoint(
+            plusPath.move(to: CGPoint(
                 x:bounds.width/2 + 0.5,
                 y:bounds.height/2 - plusWidth/2 + 0.5))
             
             //add the end point to the vertical stroke
-            plusPath.addLineToPoint(CGPoint(
+            plusPath.addLine(to: CGPoint(
                 x:bounds.width/2 + 0.5,
                 y:bounds.height/2 + plusWidth/2 + 0.5))
         }
         
         //set the stroke color
-        UIColor.whiteColor().setStroke()
+        UIColor.white.setStroke()
         
         //draw the stroke
         plusPath.stroke()
