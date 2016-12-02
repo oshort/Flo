@@ -33,6 +33,9 @@
                                         <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButtonWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CjI-Rl-JmE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZq-nb-cEC" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="162.5" y="515.5" width="50" height="50"/>
@@ -46,13 +49,30 @@
                                         <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButtonWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5y-gM-ztI"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-9J-uYR" customClass="CounterView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="72" y="76" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eti-eq-dqz">
+                                        <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="NuT-a8-Hbh"/>
+                                            <constraint firstAttribute="height" constant="44" id="PBN-WA-xm8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Eti-eq-dqz" firstAttribute="centerX" secondItem="k3H-9J-uYR" secondAttribute="centerX" id="CZC-zu-VRc"/>
                                     <constraint firstAttribute="width" constant="230" id="Npp-YO-VFv"/>
                                     <constraint firstAttribute="height" constant="230" id="RIF-2X-DIH"/>
+                                    <constraint firstItem="Eti-eq-dqz" firstAttribute="centerY" secondItem="k3H-9J-uYR" secondAttribute="centerY" id="sAs-lF-Pfr"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
@@ -74,6 +94,10 @@
                             <constraint firstItem="k3H-9J-uYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="twu-XN-nj4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="Eti-eq-dqz" id="hTf-RZ-F4d"/>
+                        <outlet property="counterView" destination="k3H-9J-uYR" id="TAR-Dd-rRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
