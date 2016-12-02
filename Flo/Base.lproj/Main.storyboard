@@ -47,6 +47,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-9J-uYR" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="72" y="76" width="230" height="230"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Npp-YO-VFv"/>
+                                    <constraint firstAttribute="height" constant="230" id="RIF-2X-DIH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,6 +62,8 @@
                             <constraint firstItem="IZq-nb-cEC" firstAttribute="top" secondItem="FgV-Hw-ZGW" secondAttribute="bottom" multiplier="1.05" constant="8" id="DcV-Mb-67G"/>
                             <constraint firstItem="FgV-Hw-ZGW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOB-Pq-u0U"/>
                             <constraint firstItem="FgV-Hw-ZGW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="aGj-1s-3U2"/>
+                            <constraint firstItem="FgV-Hw-ZGW" firstAttribute="top" secondItem="k3H-9J-uYR" secondAttribute="bottom" constant="77.5" id="gtC-d4-uEI"/>
+                            <constraint firstItem="k3H-9J-uYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="twu-XN-nj4"/>
                         </constraints>
                     </view>
                 </viewController>

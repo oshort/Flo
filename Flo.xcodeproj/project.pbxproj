@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B018E4C1DF1E6E40023123F /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B018E4B1DF1E6E40023123F /* CounterView.swift */; };
 		7B7BFF431D91B4BC00161469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BFF421D91B4BB00161469 /* AppDelegate.swift */; };
 		7B7BFF451D91B4BC00161469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BFF441D91B4BC00161469 /* ViewController.swift */; };
 		7B7BFF481D91B4BC00161469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7BFF461D91B4BC00161469 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B018E4B1DF1E6E40023123F /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		7B7BFF3F1D91B4BB00161469 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7BFF421D91B4BB00161469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B7BFF441D91B4BC00161469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				7B7BFF421D91B4BB00161469 /* AppDelegate.swift */,
 				7B7BFF441D91B4BC00161469 /* ViewController.swift */,
 				7B7BFF581D91B5B700161469 /* PushButtonView.swift */,
+				7B018E4B1DF1E6E40023123F /* CounterView.swift */,
 				7B7BFF461D91B4BC00161469 /* Main.storyboard */,
 				7B7BFF491D91B4BC00161469 /* Assets.xcassets */,
 				7B7BFF4B1D91B4BC00161469 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				7B7BFF451D91B4BC00161469 /* ViewController.swift in Sources */,
 				7B7BFF591D91B5B700161469 /* PushButtonView.swift in Sources */,
 				7B7BFF431D91B4BC00161469 /* AppDelegate.swift in Sources */,
+				7B018E4C1DF1E6E40023123F /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
